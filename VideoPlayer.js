@@ -164,7 +164,7 @@ export default class VideoPlayer extends Component {
   componentDidUpdate = prevProps => {
     const {isFullscreen} = this.props;
 
-    if (prevProps.isFullscreen !== isFullscreen) {
+    if (this.state.isFullscreen !== isFullscreen) {
       this.setState({
         isFullscreen,
       });
